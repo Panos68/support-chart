@@ -1,4 +1,4 @@
-package com.insiderlog.SupportCharts;
+package com.insiderlog.SupportCharts.jobs;
 
 import com.insiderlog.SupportCharts.services.SupportChartService;
 import org.springframework.beans.factory.annotation.Autowired;

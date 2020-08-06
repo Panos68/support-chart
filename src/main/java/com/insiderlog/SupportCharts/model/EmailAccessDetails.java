@@ -1,10 +1,10 @@
-package com.insiderlog.SupportCharts;
+package com.insiderlog.SupportCharts.model;
 
 public class EmailAccessDetails {
-  private String password;
-  private String host;
-  private String mailStoreType;
-  private String username;
+  private final String password;
+  private final String host;
+  private final String mailStoreType;
+  private final String username;
 
   public EmailAccessDetails(String password, String host, String mailStoreType, String username) {
     this.password = password;

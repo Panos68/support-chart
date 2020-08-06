@@ -1,4 +1,6 @@
-package com.insiderlog.SupportCharts;
+package com.insiderlog.SupportCharts.model;
+
+import com.insiderlog.SupportCharts.enums.Type;
 
 public class YearlyEmailStats extends EmailStats {
   private int year;

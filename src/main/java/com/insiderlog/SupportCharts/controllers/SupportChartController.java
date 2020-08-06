@@ -1,7 +1,7 @@
 package com.insiderlog.SupportCharts.controllers;
 
-import com.insiderlog.SupportCharts.EmailStats;
-import com.insiderlog.SupportCharts.YearlyEmailStats;
+import com.insiderlog.SupportCharts.model.EmailStats;
+import com.insiderlog.SupportCharts.model.YearlyEmailStats;
 import com.insiderlog.SupportCharts.services.SupportChartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
