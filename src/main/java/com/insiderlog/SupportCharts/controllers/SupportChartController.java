@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -27,10 +28,10 @@ public class SupportChartController {
     this.supportChartService = supportChartService;
   }
 
-  @PostMapping()
+  @PostMapping(value = "/calculate/{reset}")
   @ResponseBody
-  public ResponseEntity.BodyBuilder calculateEmails() {
-    supportChartService.calculateToJsonFile();
+  public ResponseEntity.BodyBuilder calculateEmails(@PathVariable boolean reset) {
+    supportChartService.calculateToJsonFile(reset);
 
     return ResponseEntity.ok();
   }

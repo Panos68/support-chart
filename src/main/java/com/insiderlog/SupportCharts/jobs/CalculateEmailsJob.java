@@ -16,6 +16,6 @@ public class CalculateEmailsJob {
 
   @Scheduled(cron = "0 0 9 * * ?")
   public void calculateEmails() {
-    supportChartService.calculateToJsonFile();
+    supportChartService.calculateToJsonFile(false);
   }
 }
