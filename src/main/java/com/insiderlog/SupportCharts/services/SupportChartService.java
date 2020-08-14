@@ -40,11 +40,18 @@ import java.util.stream.Stream;
 @Service
 public class SupportChartService {
   private List<YearlyEmailStats> yearlyEmailStats = new ArrayList<>();
+
   private List<EmailStats> emailStats = new ArrayList<>();
+
   private final ObjectMapper objectMapper = new ObjectMapper();
+
   private Date date;
+
   @Value("${password}")
   private String password;
+
+  @Value("${pin.code}")
+  private String pin;
 
   public void calculateToJsonFile(boolean reset) {
     if (!reset) {
@@ -186,5 +193,9 @@ public class SupportChartService {
 
     return objectMapper.readValue(file, new TypeReference<List<YearlyEmailStats>>() {
     });
+  }
+
+  public boolean isPinCorrect(String givenPin) {
+    return pin.equals(givenPin);
   }
 }
