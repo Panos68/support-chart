@@ -19,7 +19,6 @@ import java.util.List;
 
 @Controller
 @RequestMapping(value = "/api/supportChart")
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class SupportChartController {
 
   private final SupportChartService supportChartService;
