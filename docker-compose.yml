@@ -15,7 +15,7 @@ services:
       - 443:443
 
   backend:
-    build: .
+    image: supportchartbe:latest
     ports:
       - "8080:8080"
     volumes:

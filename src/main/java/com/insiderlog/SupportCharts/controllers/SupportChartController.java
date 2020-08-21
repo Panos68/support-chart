@@ -18,7 +18,7 @@ import java.io.IOException;
 import java.util.List;
 
 @Controller
-@RequestMapping(value = "/supportChart")
+@RequestMapping(value = "/api/supportChart")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class SupportChartController {
 
